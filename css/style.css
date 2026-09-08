@@ -296,6 +296,20 @@ button, input, textarea {
   gap: 12px;
 }
 
+.internship-task-badge {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.76rem;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  color: var(--primary);
+  background: var(--primary-light);
+  border: 1px solid var(--border);
+  padding: 6px 14px;
+  border-radius: var(--radius-pill);
+  white-space: nowrap;
+}
+
 .theme-toggle,
 .nav-toggle {
   background: var(--card);

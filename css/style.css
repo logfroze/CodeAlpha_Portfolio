@@ -1573,6 +1573,78 @@ button, input, textarea {
   transform: translateY(-2px);
 }
 
+/* ── 14.1. FLOATING QUICK ACTION DOCK (LEFT SIDE) ── */
+.floating-dock {
+  position: fixed;
+  left: 24px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 995;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-pill);
+  padding: 10px 8px;
+  box-shadow: var(--shadow-lg);
+  transition: var(--transition);
+}
+
+.floating-dock:hover {
+  border-color: var(--primary);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.5);
+}
+
+.dock-btn {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  cursor: pointer;
+  border: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--text);
+  transition: var(--transition);
+  text-decoration: none;
+  outline: none;
+}
+
+.dock-btn-scroll:hover {
+  background: var(--card-hover);
+  border-color: var(--primary);
+  color: var(--primary);
+  transform: scale(1.08);
+}
+
+.dock-btn-scroll:active {
+  transform: scale(0.95);
+}
+
+.dock-btn-whatsapp {
+  background: #25d366;
+  border-color: #25d366;
+  color: #ffffff;
+  font-size: 1.4rem;
+  box-shadow: 0 3px 12px rgba(37, 211, 102, 0.4);
+}
+
+.dock-btn-whatsapp:hover {
+  background: #20ba5a;
+  border-color: #20ba5a;
+  color: #ffffff;
+  transform: scale(1.12);
+  box-shadow: 0 6px 18px rgba(37, 211, 102, 0.6);
+}
+
+.dock-btn-whatsapp:active {
+  transform: scale(0.96);
+}
+
 /* ── 15. RESPONSIVE BREAKPOINTS ──────────────────── */
 @media (max-width: 1024px) {
   .hero-container {
@@ -1650,6 +1722,26 @@ button, input, textarea {
   .footer-container {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  /* Floating Dock Mobile Adjustment */
+  .floating-dock {
+    top: auto;
+    bottom: 24px;
+    left: 14px;
+    transform: none;
+    gap: 8px;
+    padding: 8px 6px;
+  }
+
+  .dock-btn {
+    width: 38px;
+    height: 38px;
+    font-size: 0.95rem;
+  }
+
+  .dock-btn-whatsapp {
+    font-size: 1.25rem;
   }
 }
 

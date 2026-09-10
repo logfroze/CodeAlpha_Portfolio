@@ -218,9 +218,11 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   /* ===================================================
-     7. BACK TO TOP BUTTON
+     7. SCROLL NAVIGATION & FLOATING DOCK
      =================================================== */
   const backToTopBtn = document.getElementById('back-to-top');
+  const dockScrollTop = document.getElementById('dock-scroll-top');
+  const dockScrollBottom = document.getElementById('dock-scroll-bottom');
 
   if (backToTopBtn) {
     backToTopBtn.addEventListener('click', () => {
@@ -231,4 +233,21 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  if (dockScrollTop) {
+    dockScrollTop.addEventListener('click', () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+  }
+
+  if (dockScrollBottom) {
+    dockScrollBottom.addEventListener('click', () => {
+      window.scrollTo({
+        top: document.documentElement.scrollHeight || document.body.scrollHeight,
+        behavior: 'smooth'
+      });
+    });
+  }
 });

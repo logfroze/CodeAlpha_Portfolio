@@ -104,4 +104,5 @@ CodeAlpha_Portfolio/
 **Muhammad Umar (Alan Hanma Umar)**
 - **GitHub**: [@logfroze](https://github.com/logfroze)
 - **LinkedIn**: [muhammad-umar-8149103a1](https://www.linkedin.com/in/muhammad-umar-8149103a1)
+- **Portfolio**: [umar-alan-portfolio.vercel.app](https://umar-alan-portfolio.vercel.app/)
 - **Email**: logfrozeofficial@gmail.com
